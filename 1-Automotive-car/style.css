@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #000000;
+}
+header {
+  background-image: url("car-bg.jpg");
+  color: white;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: calc(100vh - 116px);
+}
+.container {
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 100%;
+  width: 1000px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  padding: 0;
+}
+nav .logo {
+  font-size: 35px;
+}
+nav li a {
+  color: #fff;
+  padding: 15px;
+}
+nav li a.selected {
+  font-weight: bold;
+}
+nav li a:hover {
+  color: #00c2ff;
+  transition: 0.5s;
+}
+nav .bar {
+  font-size: 30px;
+  display: none;
+  cursor: pointer;
+}
+
+.highlight {
+  color: #fff;
+  background-color: #00c2ff;
+  padding: 15px;
+  border-radius: 10px;
+}
+.highlight:hover {
+  color: #fff;
+}
+header .base {
+  margin: auto;
+  font-size: 30px;
+  max-width: 100%;
+}
+.base h1 {
+  color: #00c2ff;
+  margin-bottom: 0;
+}
+
+footer {
+  height: 100px;
+  background-color: black;
+  color: #fff;
+  padding: 15px;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+footer ul strong {
+  color: #00c2ff;
+}
+footer ul p {
+  margin: 0;
+}
+
+/* Interactivity */
+@media screen and (max-width: 768px) {
+  .content {
+    font-size: 20px;
+    margin: 30px auto 0;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav .bar {
+    display: block;
+  }
+
+  nav .highlight {
+    display: none;
+  }
+
+  footer ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer li {
+    margin: 15px;
+    text-align: center;
+  }
+}

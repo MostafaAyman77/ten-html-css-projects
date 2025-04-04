@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-image: url("bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 25px);
+}
+header {
+  width: 80%;
+  margin: 0 auto;
+}
+.top-head {
+  margin: 25px 0;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-head .logo {
+  color: #026e78;
+  font-size: 40px;
+}
+.top-head .call {
+  color: #fff;
+  font-size: 22px;
+}
+nav ul {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+nav ul li {
+  flex: 1;
+}
+nav ul li a {
+  display: block;
+  text-align: center;
+  color: #fff;
+  background-color: #2d99a4;
+  padding: 15px 30px;
+}
+nav li a.active {
+  background-color: #fff;
+  color: #2d99a4;
+  font-weight: bold;
+}
+nav li a.book {
+  background-color: #026e78;
+  color: #fff;
+}
+nav li a:hover {
+  opacity: 0.7;
+}
+.bar {
+  display: none;
+}
+.content {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+.content .text {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.content .text h1 {
+  background-color: #026e78;
+  display: inline-block;
+  color: #fff;
+  padding: 15px;
+  font-weight: 200;
+}
+
+.content .text a.book-link {
+  background-color: #fff;
+  color: #026e78;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+.content .text a.menu-link {
+  background-color: #026e78;
+  color: #fff;
+  padding: 15px;
+}
+.content .text a.book-link:hover,
+.content .text a.menu-link:hover {
+  opacity: 0.7;
+  transition: 0.1s;
+}
+
+/* Interactivity */
+@media screen and (max-width: 768px) {
+  .content {
+    font-size: 20px;
+    margin: 30px auto 0;
+  }
+  .top-head .call {
+    display: none;
+  }
+  .top-head {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .bar {
+    cursor: pointer;
+    display: block;
+    color: #026e78;
+  }
+  .content .text {
+    font-size: 25px;
+  }
+}
